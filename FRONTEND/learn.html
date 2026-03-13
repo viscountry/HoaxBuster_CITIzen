@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoaxBuster - Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="min-h-screen">
+    <!-- Navigation Menu Bar -->
+    <nav
+      class="fixed top-0 w-full bg-white/95 backdrop-blur-xl z-50 border-b border-gray-200/30 shadow-professional"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center space-x-3">
+            <div
+              class="w-10 h-10 gradient-hero rounded-xl flex items-center justify-center shadow-professional"
+            >
+              <i data-feather="shield" class="text-white w-6 h-6"></i>
+            </div>
+            <span
+              class="text-2xl font-bold bg-gradient-to-r from-[#267bde] to-[#5d748f] bg-clip-text text-transparent"
+            >
+              HoaxBuster
+            </span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="text-[#041933] hover:text-[#267bde] font-medium transition-colors"
+              >Home</a
+            >
+            <a
+              href="features.html"
+              class="text-[#041933] hover:text-[#267bde] font-medium transition-colors"
+              >Features</a
+            >
+            <a
+              href="learn.html"
+              class="text-[#041933] hover:text-[#267bde] font-medium transition-colors relative"
+            >
+              Learn
+              <span
+                class="absolute -top-1 -right-8 text-[#267bde] text-xs font-semibold bg-white/80 px-2 py-1 rounded-full"
+                >New</span
+              >
+            </a>
+            <a
+              href="about.html"
+              class="text-[#041933] hover:text-[#267bde] font-medium transition-colors"
+              >About</a
+            >
+          </div>
+          <button
+            class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            onclick="toggleMobileMenu()"
+          >
+            <i data-feather="menu" class="w-6 h-6 text-[#041933]"></i>
+          </button>
+          <a
+            href="index.html#fact-checker-section"
+            class="hidden md:block gradient-hero hover:shadow-elevated hover:scale-105 transition-all duration-300 text-white px-6 py-2 rounded-xl font-semibold text-sm"
+          >
+            Verify Now
+          </a>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-white border-t border-gray-200/30 shadow-lg hidden"
+      >
+        <div class="container mx-auto px-4 py-4 space-y-4">
+          <a
+            href="index.html"
+            class="block text-[#041933] hover:text-[#267bde] font-medium transition-colors py-2"
+            >Home</a
+          >
+          <a
+            href="features.html"
+            class="block text-[#041933] hover:text-[#267bde] font-medium transition-colors py-2"
+            onclick="toggleMobileMenu()"
+            >Features</a
+          >
+          <a
+            href="learn.html"
+            class="block text-[#041933] hover:text-[#267bde] font-medium transition-colors py-2 relative"
+            onclick="toggleMobileMenu()"
+          >
+            Learn
+            <span
+              class="absolute -top-1 -right-8 text-[#267bde] text-xs font-semibold bg-white/80 px-2 py-1 rounded-full"
+              >New</span
+            >
+          </a>
+          <a
+            href="about.html"
+            class="block text-[#041933] hover:text-[#267bde] font-medium transition-colors py-2"
+            onclick="toggleMobileMenu()"
+            >About</a
+          >
+          <a
+            href="index.html#fact-checker-section"
+            class="w-full gradient-hero hover:shadow-elevated transition-all duration-300 text-white px-6 py-3 rounded-xl font-semibold text-sm mt-4"
+            onclick="toggleMobileMenu()"
+          >
+            Verify Now
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pt-16"></div>
+
+    <!-- Learn Section -->
+    <section class="py-20 relative overflow-hidden">
+      <div class="container mx-auto px-4 relative z-10">
+        <div
+          class="text-center space-y-6 mb-16"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <h2
+            class="text-4xl font-bold text-[#041933] bg-gradient-to-r from-[#267bde] to-[#5d748f] bg-clip-text text-transparent"
+          >
+            Learn to Spot Misinformation
+          </h2>
+          <p class="text-xl text-[#041933] font-light max-w-3xl mx-auto">
+            Empower yourself with knowledge to identify fake news and understand
+            how misinformation spreads. Explore our interactive modules and
+            resources.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div
+            class="p-8 text-center gradient-card rounded-2xl hover:shadow-elevated transition-all duration-500 hover:-translate-y-3 animate-fade-in border border-gray-200/20 transform-gpu group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-20 h-20 gradient-hero rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-professional group-hover:scale-110 transition-transform duration-500"
+            >
+              <i data-feather="book" class="text-white w-10 h-10"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-[#041933] mb-4 group-hover:text-[#267bde] transition-colors"
+            >
+              Intro to Misinformation
+            </h3>
+            <p class="text-[#041933] leading-relaxed">
+              Learn the basics of misinformation, including types like satire,
+              propaganda, and deepfakes.
+            </p>
+          </div>
+          <div
+            class="p-8 text-center gradient-card rounded-2xl hover:shadow-elevated transition-all duration-500 hover:-translate-y-3 animate-fade-in border border-gray-200/20 transform-gpu group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-20 h-20 gradient-hero rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-professional group-hover:scale-110 transition-transform duration-500"
+            >
+              <i data-feather="search" class="text-white w-10 h-10"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-[#041933] mb-4 group-hover:text-[#267bde] transition-colors"
+            >
+              Verification Techniques
+            </h3>
+            <p class="text-[#041933] leading-relaxed">
+              Master tools and methods to verify sources, cross-check facts, and
+              spot red flags.
+            </p>
+          </div>
+          <div
+            class="p-8 text-center gradient-card rounded-2xl hover:shadow-elevated transition-all duration-500 hover:-translate-y-3 animate-fade-in border border-gray-200/20 transform-gpu group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-20 h-20 gradient-hero rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-professional group-hover:scale-110 transition-transform duration-500"
+            >
+              <i data-feather="users" class="text-white w-10 h-10"></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-[#041933] mb-4 group-hover:text-[#267bde] transition-colors"
+            >
+              Community Insights
+            </h3>
+            <p class="text-[#041933] leading-relaxed">
+              Join a community to share experiences and learn from global
+              fact-checking efforts.
+            </p>
+          </div>
+        </div>
+        <div
+          class="p-12 gradient-card rounded-3xl shadow-elevated border border-gray-200/20 mb-12 transform-gpu backdrop-blur-sm"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <div class="text-center space-y-6">
+            <h2
+              class="text-3xl font-bold text-[#041933] bg-gradient-to-r from-[#267bde] to-[#5d748f] bg-clip-text text-transparent"
+            >
+              Start Your Learning Journey
+            </h2>
+            <p class="text-xl text-[#041933] font-light max-w-2xl mx-auto">
+              Sign up for free interactive courses and receive weekly tips to
+              enhance your media literacy skills.
+            </p>
+            <button
+              id="startButton"
+              class="gradient-hero hover:shadow-elevated hover:scale-110 transition-all duration-300 text-white text-xl px-10 py-4 rounded-2xl font-bold shadow-professional transform-gpu group relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-white/20 group-hover:bg-white/30 transition-all duration-500"
+              ></div>
+              <div class="flex items-center relative z-10">
+                <i
+                  data-feather="play"
+                  class="mr-4 w-6 h-6 group-hover:rotate-12 transition-transform"
+                ></i>
+                Get Started
+              </div>
+            </button>
+            <div id="flashcardContainer" class="hidden mt-8"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-b from-[#041933] to-black text-white py-16 relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 left-0 w-64 h-64 bg-[#267bde] rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-64 h-64 bg-[#5d748f] rounded-full blur-3xl"
+        ></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <h3
+              class="text-3xl font-bold mb-6 bg-gradient-to-r from-[#267bde] to-[#5d748f] bg-clip-text text-transparent"
+            >
+              HoaxBuster
+            </h3>
+            <p class="text-gray-200 mb-6 leading-relaxed">
+              Advanced AI-powered truth verification platform fighting
+              misinformation worldwide
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <i data-feather="twitter" class="text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <i data-feather="facebook" class="text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <i data-feather="instagram" class="text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 hover:scale-110"
+              >
+                <i data-feather="github" class="text-white"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-white">Product</h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Fact Checker</a
+                >
+              </li>
+              <li>
+                <a
+                  href="learn.html"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Learn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >API Access</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Browser Extension</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-white">Resources</h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Tutorials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Case Studies</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-6 text-white">Company</h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-200 hover:text-[#267bde] transition-colors"
+                  >Partners</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-200 text-sm mb-4 md:mb-0">
+            © 2024 HoaxBuster. All rights reserved. Fighting misinformation with
+            AI.
+          </p>
+          <div class="flex space-x-8">
+            <a
+              href="#"
+              class="text-gray-200 hover:text-[#267bde] text-sm transition-colors"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-gray-200 hover:text-[#267bde] text-sm transition-colors"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-gray-200 hover:text-[#267bde] text-sm transition-colors"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
